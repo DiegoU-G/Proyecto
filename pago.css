@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primario: #ffcc00;
+    --fondo-oscuro: rgba(0, 0, 0, 0.85);
+    --texto-claro: #fff;
+    --texto-atenuado: #ccc;
+    --sombra-caja: 0 4px 8px rgba(0, 0, 0, 0.5);
+    --transicion-suave: all 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--texto-claro);
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contenedor { 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--color-primario);
+}
+
+.titulo-seccion h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.titulo-seccion p {
+    font-size: 1.2rem;
+    color: var(--texto-atenuado);
+}
+
+
+.encabezado {
+    background-color: var(--fondo-oscuro);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: var(--sombra-caja);
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-gimnasio { 
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primario);
+}
+
+.enlaces-navegacion { 
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.enlaces-navegacion a {
+    color: var(--texto-claro);
+    text-decoration: none;
+    font-weight: 400;
+    transition: var(--transicion-suave);
+}
+
+.enlaces-navegacion a:hover {
+    color: var(--color-primario);
+}
+
+.enlace-accion-nav {
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    background-color: var(--color-primario);
+    color: #000;
+    font-weight: 700;
+}
+
+.enlace-accion-nav:hover {
+    background-color: #e6b800;
+    color: #000;
+}
+
+
+.contenido-principal { 
+    flex-grow: 1;
+    background: url('../gym-background.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    padding-top: 60px; 
+}
+
+
+.boton-accion { 
+    background-color: var(--color-primario);
+    color: #000;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: var(--transicion-suave);
+}
+
+.boton-accion:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+
+.seccion-pago { 
+    padding: 8rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor-pago { 
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: var(--sombra-caja);
+    max-width: 600px;
+    width: 90%;
+}
+
+.contenedor-pago h2 {
+    font-size: 2.5rem;
+    color: var(--color-primario);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.resumen-pago { 
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.resumen-pago h3 {
+    font-size: 1.5rem;
+    color: var(--color-primario);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.detalles-resumen p { 
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.detalles-resumen span {
+    font-weight: 700;
+}
+
+.formulario-pago { 
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.formulario-pago h3 {
+    font-size: 1.5rem;
+    color: var(--color-primario);
+}
+
+.grupo-formulario { 
+    text-align: left;
+}
+
+.grupo-formulario label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.grupo-formulario input {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--texto-claro);
+    font-size: 1rem;
+}
+
+.grupo-formulario input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-primario);
+}
+
+.grupo-formulario-dividido { 
+    display: flex;
+    gap: 1rem;
+}
+
+.grupo-formulario-dividido .grupo-formulario {
+    flex-basis: 50%;
+}
+
+.boton-pago { 
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.mensaje-error { 
+    color: #ff3333;
+    font-weight: 700;
+    text-align: center;
+    display: none;
+}
+
+
+.pie-pagina {
+    background-color: var(--fondo-oscuro);
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.pie-pagina p {
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+
+.enlaces-sociales a {
+    color: var(--texto-claro);
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.enlaces-sociales a:hover {
+    color: var(--color-primario);
+}

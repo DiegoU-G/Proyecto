@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio | Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/login.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="encabezado">
+        <nav class="navegacion">
+            <h1 class="logo-gimnasio">Gimnasio Fitness</h1>
+            <ul class="enlaces-navegacion">
+                <li><a href="landing.html">Inicio</a></li>
+                <li><a href="landing.html#clases">Clases</a></li>
+                <li><a href="landing.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <div class="contenedor-acceso">
+            <h2>Iniciar Sesión</h2>
+            <form id="formulario-acceso" class="formulario-acceso">
+                <div class="grupo-formulario">
+                    <label for="nombre-usuario">Usuario:</label>
+                    <input type="text" id="nombre-usuario" name="nombre-usuario" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                </div>
+                <button type="submit" class="boton-accion">Acceder</button>
+                <div id="mensaje-error" class="mensaje-error"></div>
+            </form>
+            <p class="texto-registro">¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2025 Gimnasio Fitness. Todos los derechos reservados.</p>
+        <div class="enlaces-sociales">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="js/login.js"></script> 
+</body>
+</html>

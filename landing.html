@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio Fitness | Tu gimnasio de élite</title>
+    <link rel="stylesheet" href="css/landing.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .language-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .lang-button {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 5px;
+        }
+        .lang-button.active {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="encabezado">
+        <nav class="navegacion">
+            <h1 class="logo-gimnasio">Gimnasio Fitness</h1>
+            <ul class="enlaces-navegacion">
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#clases">Clases</a></li>
+                <li><a href="#membresias">Membresías</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="ubi.html">Ubicacion</a></li>
+                <li><a href="empleados.html">Empleados</a></li>
+                <li><a href="/testimonios.html">Testimonios</a></li>
+                <li><a href="index.html" class="enlace-accion-nav">Acceder</a></li>
+            </ul>
+        </nav>
+        <div class="language-switch">
+            <button id="lang-es" class="lang-button active">ES</button>
+            <button id="lang-en" class="lang-button">EN</button>
+        </div>
+    </header>
+
+    <main class="contenido-principal">
+        <section id="nosotros" class="seccion-nosotros">
+            <div class="contenedor">
+                <div class="item-nosotros oculto">
+                    <h3>¿Quiénes Somos?</h3>
+                    <p>Somos un equipo de profesionales apasionados por el fitness, dedicados a ayudarte a alcanzar tus metas de salud y bienestar. Nuestras instalaciones de última generación y nuestro personal experto te ofrecen el ambiente perfecto para tu transformación.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="clases" class="seccion-clases">
+            <div class="contenedor">
+                <h3>Nuestras Clases</h3>
+                <div class="contenedor-clases">
+                    <div class="tarjeta-clase oculto">
+                        <img src="img/descarga.jfif" alt="Clase de Boxeo">
+                        <h4>Boxeo Funcional</h4>
+                        <p>Mejora tu resistencia y fuerza con nuestra clase de boxeo, dirigida por instructores certificados.</p>
+                    </div>
+                    <div class="tarjeta-clase oculto">
+                        <img src="img/yoga.jpg" alt="Clase de Yoga">
+                        <h4>Yoga y Estiramiento</h4>
+                        <p>Encuentra tu equilibrio y flexibilidad en nuestras sesiones de yoga, aptas para todos los niveles.</p>
+                    </div>
+                    <div class="tarjeta-clase oculto">
+                        <img src="img/pesas.jpg" alt="Clase de Cardio">
+                        <h4>Cardio HIIT</h4>
+                        <p>Quema calorías y acelera tu metabolismo con entrenamientos de alta intensidad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="membresias" class="seccion-membresias">
+            <div class="contenedor">
+                <h3>Nuestros Planes de Membresía</h3>
+                <div class="contenedor-precios">
+                    <div class="tarjeta-precio oculto">
+                        <h4>Bronce</h4>
+                        <div class="precio">
+                            <span class="moneda">$</span><span class="monto">25</span><span>/mes</span>
+                        </div>
+                        <ul>
+                            <li>Acceso a instalaciones 8am - 5pm</li>
+                            <li>✓ Acceso a máquinas</li>
+                            <li>✗ Clases grupales</li>
+                            <li>✗ Entrenador personal</li>
+                            <li>✗ Soporte nutricional</li>
+                        </ul>
+                        <a href="pago.html" class="boton-accion boton-precio">Elegir Plan</a>
+                    </div>
+                    <div class="tarjeta-precio oculto">
+                        <h4>Plata</h4>
+                        <div class="precio">
+                            <span class="moneda">$</span><span class="monto">35</span><span>/mes</span>
+                        </div>
+                        <ul>
+                            <li>Acceso completo 24/7</li>
+                            <li>✓ Clases grupales</li>
+                            <li>✓ Entrenador personal (limitado)</li>
+                            <li>✗ Soporte nutricional</li>
+                            <li>✗ Sauna y spa</li>
+                        </ul>
+                        <a href="pago.html" class="boton-accion boton-precio">Elegir Plan</a>
+                    </div>
+                    <div class="tarjeta-precio oculto">
+                        <h4>Oro</h4>
+                        <div class="precio">
+                            <span class="moneda">$</span><span class="monto">55</span><span>/mes</span>
+                        </div>
+                        <ul>
+                            <li>Acceso completo 24/7</li>
+                            <li>✓ Clases grupales</li>
+                            <li>✓ Entrenador personal</li>
+                            <li>✓ Soporte nutricional</li>
+                            <li>✓ Sauna y spa</li>
+                        </ul>
+                        <a href="pago.html" class="boton-accion boton-precio">Elegir Plan</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <form id="formulario-contacto" class="formulario-contacto" action="https://formsubmit.co/tucorreo@ejemplo.com" method="POST">
+        <h3>Contáctanos</h3>
+        <input type="text" name="nombre" placeholder="Tu Nombre" required>
+        <input type="email" name="email" placeholder="Tu Email" required>
+        <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea>
+        <button type="submit" class="boton-accion">Enviar Mensaje</button>
+    </form>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2025 Gimnasio Fitness. Todos los derechos reservados.</p>
+        <div class="enlaces-sociales">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="js/landing.js"></script>
+</body>
+</html>

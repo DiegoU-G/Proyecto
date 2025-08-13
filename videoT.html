@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightbox de Video</title>
+    <link rel="stylesheet" href="css/videoT.css">
+</head>
+<body>
+    <div class="contenedor-principal">
+        <h1>Demostración de Lightbox de Video</h1>
+        <p>Haz clic en el botón para ver un video de YouTube.</p>
+        <button id="abrir-lightbox-btn" class="boton-accion">Ver Video</button>
+    </div>
+
+    <div id="superposicion-lightbox" class="superposicion-lightbox oculto">
+        <div class="contenido-lightbox">
+            <span id="cerrar-lightbox-btn" class="boton-cerrar">&times;</span>
+            <iframe id="video-iframe"
+                    width="560"
+                    height="315"
+                    src=""
+                    title="Reproductor de video de YouTube"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <script src="js/videoT.js"></script>
+</body>
+</html>

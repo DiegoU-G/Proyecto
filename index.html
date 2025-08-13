@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio | Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="encabezado">
+        <nav class="navegacion">
+            <h1 class="logo-gimnasio">Gimnasio Fitness</h1>
+            <ul class="enlaces-navegacion">
+                <li><a href="landing.html" data-text-key="nav-inicio">Inicio</a></li>
+                <li><a href="landing.html#clases" data-text-key="nav-clases">Clases</a></li>
+                <li><a href="landing.html#contacto" data-text-key="nav-contacto">Contacto</a></li>
+                <li><a href="eventos.html" data-text-key="nav-eventos">Eventos</a></li>
+            </ul>
+            <div class="selector-idioma">
+                <select id="language-selector">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <div class="contenedor-introduccion">
+            <h2 id="main-title" data-text-key="main-title">¡Transforma tu cuerpo!</h2>
+            <p id="main-paragraph" data-text-key="main-paragraph">Únete a nuestra comunidad y alcanza tus metas de fitness.</p>
+            <button id="boton-entrar" class="boton-accion" data-text-key="button-enter">ENTRAR</button>
+        </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <p data-text-key="footer-text">&copy; 2025 Gimnasio Fitness. Todos los derechos reservados.</p>
+        <div class="enlaces-sociales">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ffcc00;
+    --dark-bg: rgba(0, 0, 0, 0.85);
+    --medium-bg: rgba(0, 0, 0, 0.7);
+    --light-text: #fff;
+    --dimmed-text: #ccc;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    --transition: all 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--light-text);
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.encabezado {
+    background-color: var(--dark-bg);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-gimnasio {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.enlaces-navegacion {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.enlaces-navegacion a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-weight: 400;
+    transition: var(--transition);
+}
+
+.enlaces-navegacion a:hover {
+    color: var(--primary-color);
+}
+
+.enlace-accion-nav {
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    color: #000;
+    font-weight: 700;
+}
+
+.enlace-accion-nav:hover {
+    background-color: #e6b800;
+    color: #000;
+}
+
+.contenido-principal-suplementos {
+    flex-grow: 1;
+    background: url('../gym-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px);
+}
+
+.contenedor-suplementos {
+    background-color: var(--medium-bg);
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    max-width: 600px;
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.formulario-suplementos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.imagen-suplementos {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.titulo-formulario {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.subtitulo-formulario {
+    font-size: 1.1rem;
+    color: var(--dimmed-text);
+}
+
+.grupo-formulario label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    color: var(--light-text);
+}
+
+.control-formulario,
+.selector-formulario {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--light-text);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.control-formulario:focus,
+.selector-formulario:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(255, 204, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.15);
+    color: var(--light-text);
+}
+
+.selector-formulario option {
+    background-color: #333;
+    color: var(--light-text);
+}
+
+.acciones-formulario {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.boton-personalizado {
+    flex: 1;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    border: none;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.boton-primario {
+    background-color: var(--primary-color);
+    color: #000;
+}
+
+.boton-primario:hover {
+    background-color: #e6b800;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.boton-secundario {
+    background-color: #6c757d;
+    color: var(--light-text);
+}
+
+.boton-secundario:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.resultado-final {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}
+
+.pie-pagina {
+    background-color: var(--dark-bg);
+    padding: 1rem 2rem;
+    text-align: center;
+    margin-top: auto;
+    color: var(--light-text);
+}
+
+.pie-pagina p {
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+
+.enlaces-sociales a {
+    color: var(--light-text);
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.enlaces-sociales a:hover {
+    color: var(--primary-color);
+}

@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primario: #ffcc00;
+    --fondo-oscuro: rgba(0, 0, 0, 0.85);
+    --texto-claro: #fff;
+    --texto-atenuado: #ccc;
+    --sombra-caja: 0 4px 8px rgba(0, 0, 0, 0.5);
+    --transicion-suave: all 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--texto-claro);
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--color-primario);
+}
+
+.titulo-seccion h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.titulo-seccion p {
+    font-size: 1.2rem;
+    color: var(--texto-atenuado);
+}
+
+.encabezado {
+    background-color: var(--fondo-oscuro);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: var(--sombra-caja);
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-gimnasio {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primario);
+}
+
+.enlaces-navegacion {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.enlaces-navegacion a {
+    color: var(--texto-claro);
+    text-decoration: none;
+    font-weight: 400;
+    transition: var(--transicion-suave);
+}
+
+.enlaces-navegacion a:hover {
+    color: var(--color-primario);
+}
+
+.enlace-accion-nav {
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    background-color: var(--color-primario);
+    color: #000;
+    font-weight: 700;
+}
+
+.enlace-accion-nav:hover {
+    background-color: #e6b800;
+    color: #000;
+}
+
+.contenido-principal {
+    flex-grow: 1;
+    background-size: cover;
+    padding-top: 60px;
+}
+
+.boton-accion {
+    background-color: var(--color-primario);
+    color: #000;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: var(--transicion-suave);
+}
+
+.boton-accion:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+.seccion-mapa {
+    padding: 8rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor-mapa {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--sombra-caja);
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contenedor-mapa iframe {
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+}
+
+.pie-pagina {
+    background-color: var(--fondo-oscuro);
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.pie-pagina p {
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+
+.enlaces-sociales a {
+    color: var(--texto-claro);
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.enlaces-sociales a:hover {
+    color: var(--color-primario);
+}

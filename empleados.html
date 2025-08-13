@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio Fitness | Equipo</title>
+    <link rel="stylesheet" href="css/empleados.css"> 
+</head>
+<body>
+
+ 
+    <header class="encabezado">
+        <nav class="navegacion">
+            <h1 class="logo-gimnasio">Gimnasio Fitness</h1>
+            <ul class="enlaces-navegacion">
+                <li><a href="landing.html#nosotros">Nosotros</a></li> 
+                <li><a href="landing.html#clases">Clases</a></li> 
+                <li><a href="landing.html#entrenadores">Entrenadores</a></li> 
+                <li><a href="landing.html#membresias">Membresías</a></li>
+                <li><a href="landing.html#galeria">Galería</a></li> 
+                <li><a href="acceso.html" class="enlace-accion-nav">Acceder</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <section class="seccion-empleados">
+            <div class="contenedor">
+                <div class="titulo-seccion">
+                    <h3>Conoce a Nuestro Equipo</h3>
+                    <p>La dedicación de nuestro personal hace la diferencia en tu experiencia.</p>
+                </div>
+
+           
+                <div class="contenedor-barra-busqueda">
+                    <input type="text" id="buscar-empleado" placeholder="Buscar por nombre del empleado...">
+                </div>
+
+                <div class="cuadricula-empleados">
+                    <div class="tarjeta-empleado">
+                        <img src="img/entrenador1.jpg"
+                             data-src="img/entrenador1.jpg"
+                             data-caption="Ana García - Gerente General" alt="Ana García">
+                        <h4>Gabriel García</h4>
+                        <p>Gerente General</p>
+                    </div>
+                    <div class="tarjeta-empleado">
+                        <img src="img/entrenador2.jpg"
+                             data-src="img/entrenador2.jpg"
+                             data-caption="Juan Pérez - Entrenador Personal" alt="Juan Pérez">
+                        <h4>Juan Pérez</h4>
+                        <p>Entrenador Personal</p>
+                    </div>
+                    <div class="tarjeta-empleado">
+                        <img src="img/entrenador3.jpg"
+                             data-src="img/entrenador3.jpg"
+                             data-caption="Luis Morales - Entrenador de Clases Grupales" alt="Luis Morales">
+                        <h4>Ana Morales</h4>
+                        <p>Entrenador de Clases Grupales</p>
+                    </div>
+                    <div class="tarjeta-empleado">
+                        <img src="img/entrenador4.jpg"
+                             data-src="img/entrenador4.jpg"
+                             data-caption="Sofía Torres - Recepcionista" alt="Sofía Torres">
+                        <h4>Torres Torres</h4>
+                        <p>Recepcionista</p>
+                    </div>
+                    <div class="tarjeta-empleado">
+                        <img src="img/entrenador5.jpg"
+                             data-src="img/entrenador5.jpg"
+                             data-caption="Miguel Ramos - Especialista en Nutrición" alt="Miguel Ramos">
+                        <h4>Miguel Ramos</h4>
+                        <p>Especialista en Nutrición</p>
+                    </div>
+                    <div class="tarjeta-empleado">
+                        <img src="img/entrenador6.jpg"
+                             data-src="img/entrenador6.jpg"
+                             data-caption="Laura Vega - Personal de Limpieza" alt="Laura Vega">
+                        <h4>Lauro Vega</h4>
+                        <p>Personal de Limpieza</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   
+    <footer class="pie-pagina">
+        <p>© 2025 Gimnasio Fitness. Todos los derechos reservados.</p>
+        <div class="enlaces-sociales">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+  
+    <div id="superposicion-lightbox" class="superposicion-lightbox">
+        <div class="contenido-lightbox">
+            <span class="boton-cerrar">&times;</span>
+            <img id="imagen-lightbox" src="" alt="Imagen de Empleado">
+            <p id="leyenda-lightbox"></p>
+            <button id="boton-imagen-anterior" class="boton-navegacion-lightbox boton-anterior">&lt;</button>
+            <button id="boton-imagen-siguiente" class="boton-navegacion-lightbox boton-siguiente">&gt;</button>
+        </div>
+    </div>
+
+    <script src="/js/empleados.js"></script> 
+</body>
+</html>

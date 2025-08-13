@@ -1,0 +1,50 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+.hero-section {
+    height: 100vh;
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.hero-title {
+    font-size: 4rem;
+    font-weight: 900; 
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.hero-subtitle {
+    font-size: 1.5rem; 
+    font-weight: 400;
+    color: #d1d5db; 
+}
+.btn-app, .btn-site {
+    font-weight: 700;
+    padding: 1rem 2.5rem;
+    border-radius: 9999px; 
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
+.btn-app {
+    background-color: #fde047; 
+    color: #111111;
+}
+.btn-app:hover {
+    background-color: #facc15; 
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+.btn-site {
+    background-color: #3f3f46; 
+    color: white;
+}
+.btn-site:hover {
+    background-color: #52525b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}

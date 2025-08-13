@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background: url('../gym-background.jpg') no-repeat center center fixed; /* Ajusta la ruta de la imagen de fondo */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.encabezado { 
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.navegacion { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.logo-gimnasio {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffcc00;
+}
+
+
+.enlaces-navegacion { 
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+
+.enlaces-navegacion a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+
+.enlaces-navegacion a:hover {
+    color: #ffcc00;
+}
+
+.contenido-principal { 
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.contenedor-acceso { 
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+
+.contenedor-acceso h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #ffcc00;
+}
+
+
+.formulario-acceso { 
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.grupo-formulario { 
+    text-align: left;
+}
+
+
+.grupo-formulario label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+
+.grupo-formulario input {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+.grupo-formulario input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ffcc00;
+}
+
+
+.boton-accion { 
+    width: 100%;
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.boton-accion:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+
+.texto-registro { 
+    margin-top: 1.5rem;
+}
+
+
+.texto-registro a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+.texto-registro a:hover {
+    color: #e6b800;
+}
+
+
+.mensaje-error { 
+    color: #ff3333;
+    font-weight: 700;
+    margin-top: 1rem;
+    text-align: center;
+    display: none;
+}
+
+.pie-pagina { 
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem 2rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+
+.pie-pagina p {
+    margin-bottom: 0.5rem;
+}
+
+
+.enlaces-sociales a { 
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+
+.enlaces-sociales a:hover {
+    color: #ffcc00;
+}

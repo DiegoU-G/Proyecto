@@ -1,0 +1,112 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.encabezado {
+    background-color: #111111;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-gimnasio {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.enlaces-navegacion {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.enlaces-navegacion a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.enlaces-navegacion a:hover {
+    color: #FFD700;
+}
+
+.selector-idioma select {
+    background-color: #2a2a2a;
+    color: white;
+    border: 1px solid #4a4a4a;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.contenido-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    text-align: center;
+    padding: 2rem;
+    background-image: url('https://placehold.co/1920x1080/1a1a1a/ffffff?text=Fondo+del+Gimnasio');
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor-introduccion {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+.contenedor-introduccion h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contenedor-introduccion p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.boton-accion {
+    background-color: #FFD700;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.boton-accion:hover {
+    background-color: #FFC400;
+}
+
+.pie-pagina {
+    background-color: #111111;
+    color: #888;
+    text-align: center;
+    padding: 1rem;
+}
+
+.enlaces-sociales a {
+    color: #888;
+    margin: 0 10px;
+    text-decoration: none;
+}

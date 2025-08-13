@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio | Pagar</title>
+    <link rel="stylesheet" href="css/pago.css"> 
+</head>
+<body>
+
+    <header class="encabezado">
+        <nav class="navegacion">
+            <h1 class="logo-gimnasio">Gimnasio Fitness</h1>
+            <ul class="enlaces-navegacion">
+                <li><a href="landing.html#nosotros">Nosotros</a></li>
+                <li><a href="landing.html#clases">Clases</a></li>
+                <li><a href="landing.html#membresias">Membresías</a></li>
+                <li><a href="landing.html#contacto">Contacto</a></li>
+                <li><a href="index.html" class="enlace-accion-nav">Acceder</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <section class="seccion-pago">
+            <div class="contenedor-pago">
+                <h2>Confirmar Pago de Membresía</h2>
+                <div class="resumen-pago">
+                    <h3>Resumen del Plan</h3>
+                    <div class="detalles-resumen">
+                        <p>Plan Seleccionado: <span id="nombre-plan">No seleccionado</span></p>
+                        <p>Precio: <span id="precio-plan">$0</span></p>
+                    </div>
+                </div>
+
+                <form id="formulario-pago" class="formulario-pago">
+                    <h3>Datos de Pago</h3>
+                    <div class="grupo-formulario">
+                        <label for="numero-tarjeta">Número de Tarjeta</label>
+                        <input type="text" id="numero-tarjeta" required placeholder="XXXX-XXXX-XXXX-XXXX">
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="nombre-tarjeta">Nombre en la Tarjeta</label>
+                        <input type="text" id="nombre-tarjeta" required>
+                    </div>
+                    <div class="grupo-formulario-dividido">
+                        <div class="grupo-formulario">
+                            <label for="fecha-caducidad">Fecha de Caducidad</label>
+                            <input type="text" id="fecha-caducidad" required placeholder="MM/AA">
+                        </div>
+                        <div class="grupo-formulario">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" required placeholder="XXX">
+                        </div>
+                    </div>
+                    <div id="mensaje-pago" class="mensaje-error"></div>
+                    <button type="submit" class="boton-accion boton-pago">Pagar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2025 Gimnasio Fitness. Todos los derechos reservados.</p>
+        <div class="enlaces-sociales">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="js/pago.js"></script> 
+</body>
+</html>

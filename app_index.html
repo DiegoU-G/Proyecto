@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Pagos para Gimnasio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="cuerpo">
+
+    <header class="encabezado">
+        <h1>Gimnasio Fitness</h1>
+    </header>
+
+    <nav class="navegacion">
+        <ul class="lista-menu">
+            <li><a href="/landing.html#nosotros" class="enlace-menu">Nosotros</a></li>
+            <li><a href="/landing.html#clases" class="enlace-menu">Clases</a></li>
+            <li><a href="/landing.html#membresia" class="enlace-menu">Membresias</a></li>
+            <li><a href="/landing.html#contacto " class="enlace-menu">Contacto</a></li>
+            <li><a href="#app" class="enlace-activo">Apps</a></li>
+        </ul>
+    </nav>
+
+    <main class="contenedor-app" id="app">
+        <h2 class="titulo-principal">Calculadora de Pagos</h2>
+        <p class="subtitulo-app">
+            Calcula el costo de tu membresía o de un equipo de entrenamiento, financiado a varios meses.
+        </p>
+
+        <div class="contenedor-formulario">
+            <form id="formulario-calculadora" class="space-y-6">
+                <div>
+                    <label for="selector-plan" class="block text-gray-200 font-semibold mb-2">Selecciona un Plan o Equipo</label>
+                    <select id="selector-plan" class="input-estilo">
+                        <option value="">Selecciona un plan...</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="meses" class="block text-gray-200 font-semibold mb-2">Número de meses</label>
+                    <input type="number" id="meses" placeholder="Ej: 12" class="input-estilo">
+                    <p id="meses-error" class="mensaje-error mt-1 hidden">Ingresa un número de meses válido.</p>
+                </div>
+
+                <div>
+                    <label for="interes" class="block text-gray-200 font-semibold mb-2">Tasa de interés anual (%)</label>
+                    <input type="number" id="interes" placeholder="Ej: 5" class="input-estilo">
+                    <p id="interes-error" class="mensaje-error mt-1 hidden">Ingresa un porcentaje de interés válido.</p>
+                </div>
+
+                <button type="submit" class="boton-calculo">
+                    Calcular Pago Mensual
+                </button>
+            </form>
+        </div>
+
+        <div id="resultado-div" class="contenedor-resultados hidden">
+            <h3 class="text-2xl font-bold text-white mb-4">Tu Resultado</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                    <p class="font-semibold text-gray-400">Pago mensual:</p>
+                    <p id="pago-mensual" class="text-4xl font-bold text-yellow-400 mt-1"></p>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-400">Costo total:</p>
+                    <p id="costo-total" class="text-2xl font-bold text-yellow-400 mt-1"></p>
+                </div>
+            </div>
+            <p id="ultima-busqueda" class="text-sm text-gray-500 mt-4 text-center"></p>
+        </div>
+
+        <div class="text-center mt-12">
+            <p class="text-gray-400 mb-4">¿Necesitas ayuda con la aplicación?</p>
+            <a href="img/Manual de Uso.pdf" download="Manual de Uso App Gimnasio.pdf" class="boton-descarga">
+                Descargar Manual de Uso (PDF)
+            </a>
+        </div>
+
+    </main>
+
+
+    <footer class="pie-pagina">
+        <p>&copy; 2024 Tu Gimnasio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
